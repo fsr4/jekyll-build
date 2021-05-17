@@ -1,0 +1,18 @@
+name: 'Jekyll Build'
+description: 'A GitHub action to build a Jekyll site'
+inputs:
+  jekyll_env:
+    description: 'The Jekyll environment to build'
+    required: false
+  jekyll_build_options:
+    description: 'Additional Jekyll build command options (see https://jekyllrb.com/docs/configuration/options/#build-command-options)'
+    required: false
+  pre_build_commands:
+    description: 'Commands to run prior to building. Useful for installing additional dependencies using alpine apk.'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'package'
+  color: 'red'
