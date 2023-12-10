@@ -1,4 +1,4 @@
-FROM ruby:2-alpine
+FROM ruby:3-alpine
 
 LABEL author="Luis Hankel"
 LABEL version="1.0.0"
